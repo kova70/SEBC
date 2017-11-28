@@ -1,3 +1,6 @@
+$ vi /etc/selinux/config
+SELINUX=disabled
+$ reboot
 $ echo never > /sys/kernel/mm/transparent_hugepage/defrag
 $ echo never > /sys/kernel/mm/transparent_hugepage/enabled
 $ chmod u+x /etc/rc.d/rc.local
