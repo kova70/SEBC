@@ -1,5 +1,5 @@
 `hadoop jar hadoop-examples.jar teragen 100000000 /user/rodo-dev/terasort-input`<br>
-17/11/28 17:05:00 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
+<code>17/11/28 17:05:00 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
 17/11/28 17:05:00 INFO terasort.TeraGen: Generating 100000000 using 2
 17/11/28 17:05:01 INFO mapreduce.JobSubmitter: number of splits:2
 17/11/28 17:05:01 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1511882332135_0004
@@ -57,7 +57,7 @@
 	File Input Format Counters 
 		Bytes Read=0
 	File Output Format Counters 
-		Bytes Written=10000000000<br>
+		Bytes Written=10000000000<br></code>
     
 `hadoop jar hadoop-examples.jar terasort /user/rodo-dev/terasort-input /user/rodo-dev/terasort-output`<br>
 17/11/28 17:11:44 INFO terasort.TeraSort: starting
