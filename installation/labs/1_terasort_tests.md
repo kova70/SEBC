@@ -1,8 +1,8 @@
 # The full teragen and command you used and the job output
-<b>`hadoop jar hadoop-examples.jar teragen 100000000 /user/rodo-dev/terasort-input`<br></b>
+<b>`hadoop jar hadoop-examples.jar teragen -D dfs.block.size=33554432 -D mapreduce.job.maps=4 100000000 /user/rodo-dev/terasort-input`<br></b>
 <code>17/11/28 17:05:00 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
-17/11/28 17:05:00 INFO terasort.TeraGen: Generating 100000000 using 2
-17/11/28 17:05:01 INFO mapreduce.JobSubmitter: number of splits:2
+17/11/28 17:05:00 INFO terasort.TeraGen: Generating 100000000 using 4
+17/11/28 17:05:01 INFO mapreduce.JobSubmitter: number of splits:4
 17/11/28 17:05:01 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1511882332135_0004
 17/11/28 17:05:01 INFO impl.YarnClientImpl: Submitted application application_1511882332135_0004
 17/11/28 17:05:01 INFO mapreduce.Job: The url to track the job: http://rodonode1.RodoNode1.d3.internal.cloudapp.net:8088/proxy/application_1511882332135_0004/
