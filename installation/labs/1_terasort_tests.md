@@ -1,5 +1,5 @@
 # The full teragen and command you used and the job output
-<n>`hadoop jar hadoop-examples.jar teragen 100000000 /user/rodo-dev/terasort-input`<br><\n>
+<b>`hadoop jar hadoop-examples.jar teragen 100000000 /user/rodo-dev/terasort-input`<br><\b>
 <code>17/11/28 17:05:00 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
 17/11/28 17:05:00 INFO terasort.TeraGen: Generating 100000000 using 2
 17/11/28 17:05:01 INFO mapreduce.JobSubmitter: number of splits:2
@@ -61,7 +61,7 @@
 		Bytes Written=10000000000<br></code>
 
 # The same for terasort
-<n>`hadoop jar hadoop-examples.jar terasort /user/rodo-dev/terasort-input /user/rodo-dev/terasort-output`<br><\n>
+<b>`hadoop jar hadoop-examples.jar terasort /user/rodo-dev/terasort-input /user/rodo-dev/terasort-output`<br><\b>
 17/11/28 17:11:44 INFO terasort.TeraSort: starting
 17/11/28 17:11:46 INFO input.FileInputFormat: Total input paths to process : 2
 Spent 197ms computing base-splits.
@@ -176,7 +176,7 @@ Spent 879ms computing partitions.
 17/11/28 17:13:33 INFO terasort.TeraSort: done
 
 # Terasort Validate
-<n>`hadoop jar hadoop-examples.jar teravalidate /user/rodo-dev/terasort-output /user/rodo-dev/terasort-validate`<br><\n>
+<b>`hadoop jar hadoop-examples.jar teravalidate /user/rodo-dev/terasort-output /user/rodo-dev/terasort-validate`<br><\b>
 <code>17/11/28 17:16:44 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
 17/11/28 17:16:44 INFO input.FileInputFormat: Total input paths to process : 12
 Spent 37ms computing base-splits.
