@@ -1,15 +1,15 @@
-CM Monitoring Lab
+#CM Monitoring Lab
 
-What is ubertask optimization?
+<b>What is ubertask optimization?</b>
 Whether to enable the small-jobs "ubertask" optimization, which runs "sufficiently small" jobs sequentially within a single JVM. "Small" is defined by the following maxmaps, maxreduces, and maxbytes settings. Note that configurations for application masters also affect the "Small" definition - yarn.app.mapreduce.am.resource.mb must be larger than both mapreduce.map.memory.mb and mapreduce.reduce.memory.mb, and yarn.app.mapreduce.am.resource.cpu-vcores must be larger than both mapreduce.map.cpu.vcores and mapreduce.reduce.cpu.vcores to enable ubertask. Users may override this value. 
 Source:https://archive.cloudera.com/cdh5/cdh/5/hadoop/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml
 
-Where in CM is the Kerberos Security Realm value displayed?
+<b>Where in CM is the Kerberos Security Realm value displayed?</b>
 Dentro de Administración -> Seguridad -> Credenciales Kerberos -> Configuracion 
 Dominio de seguridad de Kerberos (default_realm)
 Link, para mi laboratorio:http://rodonode1.cloudapp.net:7180/cmf/settings?groupKey=config.common.kerberos.display_group&groupParent=#filtercategory=Ajustes&filterdisplayGroup=Kerberos&filterfreeText=key
 
-Which CDH service(s) host a property for enabling Kerberos authentication?
+<b>Which CDH service(s) host a property for enabling Kerberos authentication?</b>
 HDFS service
 FLUME
 HBASE
@@ -22,7 +22,7 @@ SPARK
 ZooKeeper.
 HDFS HTTP Web-Consoles Note: This is effective only if Kerberos is enabled for the HDFS service.
 
-How do you upgrade the CM agents?
+<b>How do you upgrade the CM agents?</b>
 
 To manually upgrade the Cloudera Manager agent:
 On all cluster hosts except the Cloudera Manager Server host, stop the Agent:
@@ -56,15 +56,15 @@ Cloudera Manager upgrades Agent software
         The Host Inspector runs to inspect your managed hosts for correct versions and configurations. If problems occur, you can make changes and then rerun the inspector.
         When you are satisfied with the inspection results, click Continue.
 
-Give the tsquery statement used to chart Hue's CPU utilization?
+<b>Give the tsquery statement used to chart Hue's CPU utilization?</b>
   select cpu_user_rate where roleType=HUE_SERVER
   
-Name all the roles that make up the Hive service
+<b>Name all the roles that make up the Hive service</b>
     HIVE:
       Hive Metastore Server
       HiveServer2
       
-What steps must be completed before integrating Cloudera Manager with Kerberos?
+<b>What steps must be completed before integrating Cloudera Manager with Kerberos?</b>
   1 - Configuration of DNS and Reverse DNS Resolutions
   2 - Configuration of MIT KDC or another KDC  ( Server configurations )
   3 - Create a user with administrative privileges on KDC Server ( cloudera-scm user for example (addprinc cloudera-scm@REALM.CORP) )
