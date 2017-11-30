@@ -1,10 +1,9 @@
 # HDFS Lab: Test HDFS Snapshots
 
 - Create a precious directory in HDFS; copy the ZIP course file into it. <br>
-  `hdfs dfs -mkdir precious <br>
-  hdfs dfs -ls`
+  `hdfs dfs -mkdir precious` <br>
+  `hdfs dfs -ls` <br>
   Found 5 items 
-<br>
   drwx------   - rodo-dev supergroup          0 2017-11-28 17:17 .staging <br>
   drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:32 precious <br>
   drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:06 terasort-input <br>
