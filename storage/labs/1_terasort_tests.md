@@ -1,5 +1,6 @@
-[rodo-dev@rodonode1 jars]$ hadoop jar hadoop-examples.jar teragen -D dfs.block.size=33554432 -D mapreduce.job.maps=4 100000000 /user/rodo-dev/terasort-input
-17/11/28 17:05:00 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
+# The full teragen and command you used and the job output
+<b>`hadoop jar hadoop-examples.jar teragen -D dfs.block.size=33554432 -D mapreduce.job.maps=4 100000000 /user/rodo-dev/terasort-input`<br></b>
+<code>17/11/28 17:05:00 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
 17/11/28 17:05:00 INFO terasort.TeraGen: Generating 100000000 using 4
 17/11/28 17:05:01 INFO mapreduce.JobSubmitter: number of splits:4
 17/11/28 17:05:01 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1511882332135_0004
@@ -57,9 +58,10 @@
 	File Input Format Counters 
 		Bytes Read=0
 	File Output Format Counters 
-		Bytes Written=10000000000
-    
-    [rodo-dev@rodonode1 jars]$ hadoop jar hadoop-examples.jar terasort /user/rodo-dev/terasort-input /user/rodo-dev/terasort-output
+		Bytes Written=10000000000<br></code>
+
+# The same for terasort
+<b>`hadoop jar hadoop-examples.jar terasort /user/rodo-dev/terasort-input /user/rodo-dev/terasort-output`<br></b>
 17/11/28 17:11:44 INFO terasort.TeraSort: starting
 17/11/28 17:11:46 INFO input.FileInputFormat: Total input paths to process : 2
 Spent 197ms computing base-splits.
@@ -173,8 +175,9 @@ Spent 879ms computing partitions.
 		Bytes Written=10000000000
 17/11/28 17:13:33 INFO terasort.TeraSort: done
 
-[rodo-dev@rodonode1 jars]$ hadoop jar hadoop-examples.jar teravalidate /user/rodo-dev/terasort-output /user/rodo-dev/terasort-validate
-17/11/28 17:16:44 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
+# Terasort Validate
+<b>`hadoop jar hadoop-examples.jar teravalidate /user/rodo-dev/terasort-output /user/rodo-dev/terasort-validate`<br></b>
+<code>17/11/28 17:16:44 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
 17/11/28 17:16:44 INFO input.FileInputFormat: Total input paths to process : 12
 Spent 37ms computing base-splits.
 Spent 2ms computing TeraScheduler splits.
@@ -249,17 +252,19 @@ Spent 2ms computing TeraScheduler splits.
 	File Input Format Counters 
 		Bytes Read=10000000000
 	File Output Format Counters 
-		Bytes Written=25
-    
-[rodo-dev@rodonode1 ~]$ hdfs dfs -ls -h 
-Found 4 items
+	Bytes Written=25</code>
+
+# Output
+<b>`hdfs dfs -ls -h`<br></b>
+<code>Found 4 items
 drwx------   - rodo-dev supergroup          0 2017-11-28 17:17 .staging
 drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:06 terasort-input
 drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:13 terasort-output
-drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:17 terasort-validate
+drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:17 terasort-validate</code>
 
-[rodo-dev@rodonode1 ~]$ hdfs dfs -ls -h terasort-input
-Found 3 items
+# Success of Terasort Validate
+<b>`hdfs dfs -ls -h terasort-input`<br></b>
+<code>Found 3 items
 -rw-r--r--   3 rodo-dev supergroup          0 2017-11-28 17:06 terasort-input/_SUCCESS
 -rw-r--r--   3 rodo-dev supergroup      4.7 G 2017-11-28 17:06 terasort-input/part-m-00000
--rw-r--r--   3 rodo-dev supergroup      4.7 G 2017-11-28 17:06 terasort-input/part-m-00001
+-rw-r--r--   3 rodo-dev supergroup      4.7 G 2017-11-28 17:06 terasort-input/part-m-00001</code>
