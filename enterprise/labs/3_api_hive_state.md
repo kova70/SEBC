@@ -1,4 +1,5 @@
-```[root@rodonode1 ~]# curl -X POST -u rodo-dev:cloudera 'http://localhost:7180/api/v1/clusters/Rodo-dev/services/hive/commands/stop'
+```
+[root@rodonode1 ~]# curl -X POST -u rodo-dev:cloudera 'http://localhost:7180/api/v1/clusters/Rodo-dev/services/hive/commands/stop'
 {
   "id" : 981,
   "name" : "Stop",
@@ -68,4 +69,5 @@
     "clusterName" : "cluster",
     "serviceName" : "hive"
   }
-}[root@rodonode1 ~]# 
+}
+```
