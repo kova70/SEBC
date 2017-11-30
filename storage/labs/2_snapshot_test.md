@@ -21,6 +21,8 @@ SEBC-master (5).zip<br>                                                         
 Found 1 items <br>
 -rw-r--r--   3 rodo-dev supergroup     474833 2017-11-28 17:48 /user/rodo-dev/precious/SEBC-master.zip 
 <br>
-- Delete the file 
+<br>
+- Delete the file <br>
+
 [rodo-dev@rodonode1 ~]$ hdfs dfs -rm -skipTrash /user/rodo-dev/precious/SEBC-master.zip
 Deleted /user/rodo-dev/precious/SEBC-master.zip
