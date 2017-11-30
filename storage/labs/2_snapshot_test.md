@@ -10,8 +10,8 @@
   drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:13 terasort-output <br>
   drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:17 terasort-validate <br>
 <br>
-- Copy the ZIP course file into it. <br>
 
+- Copy the ZIP course file into it. <br>
 Adolfo:Curso Cloudera $ scp SEBC-master\ \(5\).zip -u rodo-dev@rodonode1.cloudapp.net:/home/rodo-dev
 <br>
 Password:<br>
