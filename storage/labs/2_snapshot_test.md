@@ -25,3 +25,5 @@ Found 1 items <br>
 - Delete the file <br>
 [rodo-dev@rodonode1 ~]$ hdfs dfs -rm -skipTrash /user/rodo-dev/precious/SEBC-master.zip
 Deleted /user/rodo-dev/precious/SEBC-master.zip
+
+- Review PNG images for snapshots <br>
