@@ -13,7 +13,6 @@
 
 - Copy the ZIP course file into it. <br>
 Adolfo:Curso Cloudera $ scp SEBC-master\ \(5\).zip -u rodo-dev@rodonode1.cloudapp.net:/home/rodo-dev
-<br>
 Password:<br>
 SEBC-master (5).zip<br>                                                                                                                             100%  464KB 603.1KB/s   00:<br>
 [rodo-dev@rodonode1 ~]$ hdfs dfs -put SEBC-master.zip <br>
