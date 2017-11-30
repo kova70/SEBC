@@ -1,4 +1,4 @@
-[rodo-dev@rodonode1 jars]$ hadoop jar hadoop-examples.jar teragen 100000000 /user/rodo-dev/terasort-input
+`hadoop jar hadoop-examples.jar teragen 100000000 /user/rodo-dev/terasort-input`<br>
 17/11/28 17:05:00 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
 17/11/28 17:05:00 INFO terasort.TeraGen: Generating 100000000 using 2
 17/11/28 17:05:01 INFO mapreduce.JobSubmitter: number of splits:2
@@ -57,9 +57,9 @@
 	File Input Format Counters 
 		Bytes Read=0
 	File Output Format Counters 
-		Bytes Written=10000000000
+		Bytes Written=10000000000<br>
     
-    [rodo-dev@rodonode1 jars]$ hadoop jar hadoop-examples.jar terasort /user/rodo-dev/terasort-input /user/rodo-dev/terasort-output
+`hadoop jar hadoop-examples.jar terasort /user/rodo-dev/terasort-input /user/rodo-dev/terasort-output`<br>
 17/11/28 17:11:44 INFO terasort.TeraSort: starting
 17/11/28 17:11:46 INFO input.FileInputFormat: Total input paths to process : 2
 Spent 197ms computing base-splits.
@@ -173,7 +173,7 @@ Spent 879ms computing partitions.
 		Bytes Written=10000000000
 17/11/28 17:13:33 INFO terasort.TeraSort: done
 
-[rodo-dev@rodonode1 jars]$ hadoop jar hadoop-examples.jar teravalidate /user/rodo-dev/terasort-output /user/rodo-dev/terasort-validate
+`hadoop jar hadoop-examples.jar teravalidate /user/rodo-dev/terasort-output /user/rodo-dev/terasort-validate`<br>
 17/11/28 17:16:44 INFO client.RMProxy: Connecting to ResourceManager at rodonode1.RodoNode1.d3.internal.cloudapp.net/10.2.0.4:8032
 17/11/28 17:16:44 INFO input.FileInputFormat: Total input paths to process : 12
 Spent 37ms computing base-splits.
@@ -251,14 +251,14 @@ Spent 2ms computing TeraScheduler splits.
 	File Output Format Counters 
 		Bytes Written=25
     
-[rodo-dev@rodonode1 ~]$ hdfs dfs -ls -h 
+`hdfs dfs -ls -h`<br>
 Found 4 items
 drwx------   - rodo-dev supergroup          0 2017-11-28 17:17 .staging
 drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:06 terasort-input
 drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:13 terasort-output
 drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:17 terasort-validate
 
-[rodo-dev@rodonode1 ~]$ hdfs dfs -ls -h terasort-input
+`hdfs dfs -ls -h terasort-input`<br>
 Found 3 items
 -rw-r--r--   3 rodo-dev supergroup          0 2017-11-28 17:06 terasort-input/_SUCCESS
 -rw-r--r--   3 rodo-dev supergroup      4.7 G 2017-11-28 17:06 terasort-input/part-m-00000
