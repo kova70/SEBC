@@ -1,5 +1,5 @@
 ```
-## Report the latest available version of the API
+### Report the latest available version of the API
 [root@rodonode1 ~]#  curl -u rodo-dev:cloudera 'http://localhost:7180/api/version'
 v18
 ## Report the CM version
