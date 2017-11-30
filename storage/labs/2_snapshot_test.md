@@ -3,7 +3,8 @@
 - Create a precious directory in HDFS; copy the ZIP course file into it. <br>
   `hdfs dfs -mkdir precious <br>
   hdfs dfs -ls`
-  Found 5 items <br>
+  Found 5 items 
+<br>
   drwx------   - rodo-dev supergroup          0 2017-11-28 17:17 .staging <br>
   drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:32 precious <br>
   drwxr-xr-x   - rodo-dev supergroup          0 2017-11-28 17:06 terasort-input <br>
@@ -18,7 +19,8 @@ SEBC-master (5).zip<br>                                                         
 [rodo-dev@rodonode1 ~]$ hdfs dfs -mv SEBC-master.zip /user/rodo-dev/precious <br>
 [rodo-dev@rodonode1 ~]$ hdfs dfs -ls /user/rodo-dev/precious<br>
 Found 1 items <br>
--rw-r--r--   3 rodo-dev supergroup     474833 2017-11-28 17:48 /user/rodo-dev/precious/SEBC-master.zip <br>
+-rw-r--r--   3 rodo-dev supergroup     474833 2017-11-28 17:48 /user/rodo-dev/precious/SEBC-master.zip 
+<br>
 - Delete the file 
 [rodo-dev@rodonode1 ~]$ hdfs dfs -rm -skipTrash /user/rodo-dev/precious/SEBC-master.zip
 Deleted /user/rodo-dev/precious/SEBC-master.zip
