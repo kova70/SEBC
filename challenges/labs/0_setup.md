@@ -155,5 +155,6 @@
 
 * List the /etc/group entries for comets and planets
       * `more /etc/group | grep ets`
-      * comets:x:1001:haley
-      * planets:x:1002:saturn
+      * `comets:x:1001:haley`
+      * `planets:x:1002:saturn`
+
