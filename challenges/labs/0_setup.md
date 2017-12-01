@@ -152,3 +152,8 @@
       * uid=2800(saturn) gid=2800(saturn) groups=1002(planets),2800(saturn
       * [root@nodo1 ~]# id haley
       * uid=2900(haley) gid=2900(haley) groups=1001(comets),2900(haley)
+
+* List the /etc/group entries for comets and planets
+      * _[root@nodo1 ~]# more /etc/group | grep ets_
+      * comets:x:1001:haley
+      * planets:x:1002:saturn
