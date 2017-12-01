@@ -158,3 +158,4 @@
       * `comets:x:1001:haley`<br>
       * `planets:x:1002:saturn`
 
+_falto la salida de /etc/passwd_
