@@ -142,3 +142,13 @@
         rhui-rhel-server-rhui-rhscl-7-rpms/7Server/x86_64                                 Red Hat Software Collections RPMs for Red Hat Enterprise Linux 7 Server from RHUI                          9,198
         rhui-rhel-server-rhui-rhscl-7-source-rpms/7Server/x86_64                          Red Hat Software Collections Source RPMs for Red Hat Enterprise Linux 7 Server from RHUI                   3,841
         repolist: 65,056
+
+* Add the following Linux accounts to all nodes 
+      * `[root@nodo1 ~]# groupadd comets`
+      * `[root@nodo1 ~]# groupadd planets`
+      * `[root@nodo1 ~]# useradd -u 2800 -G planets saturn`
+      * `[root@nodo1 ~]# useradd -u 2900 -G comets haley`
+      * `[root@nodo1 ~]# id saturn`
+         * uid=2800(saturn) gid=2800(saturn) groups=1002(planets),2800(saturn
+      * `[root@nodo1 ~]# id haley`
+         * uid=2900(haley) gid=2900(haley) groups=1001(comets),2900(haley)
