@@ -144,11 +144,11 @@
         repolist: 65,056
 
 * Add the following Linux accounts to all nodes 
-      * `[root@nodo1 ~]# groupadd comets`
-      * `[root@nodo1 ~]# groupadd planets`
-      * `[root@nodo1 ~]# useradd -u 2800 -G planets saturn`
-      * `[root@nodo1 ~]# useradd -u 2900 -G comets haley`
-      * `[root@nodo1 ~]# id saturn`
-         * uid=2800(saturn) gid=2800(saturn) groups=1002(planets),2800(saturn
-      * `[root@nodo1 ~]# id haley`
-         * uid=2900(haley) gid=2900(haley) groups=1001(comets),2900(haley)
+      * [root@nodo1 ~]# groupadd comets
+      * [root@nodo1 ~]# groupadd planets
+      * [root@nodo1 ~]# useradd -u 2800 -G planets saturn
+      * [root@nodo1 ~]# useradd -u 2900 -G comets haley
+      * [root@nodo1 ~]# id saturn
+      * uid=2800(saturn) gid=2800(saturn) groups=1002(planets),2800(saturn
+      * [root@nodo1 ~]# id haley
+      * uid=2900(haley) gid=2900(haley) groups=1001(comets),2900(haley)
